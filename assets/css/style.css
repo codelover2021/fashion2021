@@ -1366,7 +1366,7 @@ body {
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__left p:hover {
-  color: #000;
+  font-weight: bold;
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__left .active p {
@@ -1416,6 +1416,8 @@ body {
   line-height: 54px;
   letter-spacing: 0.06em;
   color: #000000;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .orderpage__section-wrapper .order__pagination {
@@ -1485,6 +1487,10 @@ body {
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .orderpage__section-wrapper .order__pagination-page:last-child {
   margin: 0 22px 0 0;
+}
+
+.profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .orderpage__section-wrapper .order__section {
+  margin-top: 22px;
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .orderpage__section-wrapper .order__box {
@@ -1672,6 +1678,9 @@ body {
   letter-spacing: 0.06em;
   color: #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .accountpage__section-wrapper .account__title p:last-child {
@@ -1679,6 +1688,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.06em;
   color: #000000;
+  padding-top: 20px;
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .accountpage__section-wrapper .account__go {
@@ -1792,6 +1802,8 @@ body {
   line-height: 44px;
   letter-spacing: 0.06em;
   color: #000000;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .ordersDetalis__section-wrapper .ordersDetalis__info1 {
