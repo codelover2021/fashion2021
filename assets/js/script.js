@@ -28,6 +28,16 @@
   });
 })(document, window, 0);
 
+let basket = document.querySelector(".basket");
+let basketPrd = document.querySelector(".basketPrd");
+basket.addEventListener("click", function (e) {
+  basketPrd.classList.toggle("basketPrd__active");
+});
+let clsBasket = document.querySelector(".close");
+clsBasket.addEventListener("click", function (e) {
+  basketPrd.classList.remove("basketPrd__active");
+});
+
 // // Start filter div
 const filter = document.querySelector(".customSelect__trigger");
 filter.addEventListener("click", function (e) {
