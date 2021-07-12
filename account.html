@@ -1161,19 +1161,35 @@
                      <div id="profilepage__consignment" class="tabcontent consignment" style="display: none">
                         <div class="consignment__section-wrapper">
                            <form id="msform" class="msform" action="#" method="#">
-                              <ul id="section-tabs">
-                                 <li class="current active"><span>1.</span> Creds</li>
+                              <!-- <ul id="section-tabs">
+                                 <li class="current active">
+                                    <span>1.</span> Creds
+                                 </li>
                                  <li><span>2.</span> Deets</li>
                                  <li><span>3.</span> Settings</li>
                                  <li><span>4.</span> Last Words</li>
-                              </ul>
-                              <!-- progressbar -->
-                              <!-- <ul id="progressbar">
-                                             <li class="active" id="account"><strong>Account</strong></li>
-                                             <li id="personal"><strong>Personal</strong></li>
-                                             <li id="payment"><strong>Image</strong></li>
-                                             <li id="confirm"><strong>Finish</strong></li>
-                                          </ul> -->
+                              </ul> -->
+                              <div class="progress_box">
+                                 <div class="progress__title">
+                                    <h3>
+                                       Consign an Item
+                                    </h3>
+                                 </div>
+                                 <!-- progressbar -->
+                                 <ul id="progressbar">
+                                    <li class="active" id="account">
+                                       <strong>Info</strong>
+                                    </li>
+                                    <li id="personal">
+                                       <strong>Item</strong>
+                                    </li>
+                                    <li id="payment">
+                                       <strong>Last step</strong>
+                                    </li>
+                                    <!-- <li id="confirm"><strong>Finish</strong></li> -->
+                                 </ul>
+                              </div>
+
                               <fieldset>
                                  <div class="form-card form-card1">
                                     <div class="form__wrraper">
@@ -1196,7 +1212,7 @@
                                           </div>
                                           <div class="select">
                                              <div class="custom-select__title">
-                                                <p>Designer</p>
+                                                <p>Email</p>
                                              </div>
                                              <div class="custom-select__input">
                                                 <input type="email" placeholder="example@gmail.com" />
@@ -1252,53 +1268,78 @@
                                        <div class="selects">
                                           <div class="select">
                                              <div class="custom-select__title">
-                                                <p>Cotegory</p>
+                                                <p>Category</p>
                                              </div>
-                                             <div class="custom-select">
-                                                <div class="custom-select__trigger">
-                                                   <span>Please select</span>
-                                                   <div class="arrow"></div>
+                                             <div class="content__accardion">
+                                                <div class="container">
+                                                   <div class="custom-select-wrapper">
+                                                      <div class="custom-select book-info__size">
+                                                         <div class="custom-select__trigger"><span>Category</span>
+                                                            <div class="arrow"></div>
+                                                         </div>
+                                                         <div class="custom-options">
+                                                            <span class="custom-option selected"
+                                                               data-value="Category">Category</span>
+                                                            <span class="custom-option" data-value="Category 1">Category
+                                                               1</span>
+                                                            <span class="custom-option" data-value="Category ">Category
+                                                               2</span>
+                                                            <span class="custom-option" data-value="Category 3">Category
+                                                               3</span>
+
+                                                         </div>
+                                                      </div>
+                                                   </div>
                                                 </div>
                                              </div>
-                                          </div>
+                                          </div>>
                                           <div class="select">
                                              <div class="custom-select__title">
                                                 <p>Shoe name (optional)</p>
                                              </div>
-                                             <div class="custom-select">
-                                                <div class="custom-select__trigger">
-                                                   <span style="color:#888888;">Example</span>
-                                                </div>
+                                             <div class="custom-select__input">
+                                                <input type="text" placeholder="Shoe name" />
                                              </div>
                                           </div>
                                           <div class="select">
                                              <div class="custom-select__title">
                                                 <p>Designer</p>
                                              </div>
-                                             <div class="custom-select">
-                                                <div class="custom-select__trigger">
-                                                   <span style="color:#888888;">Example</span>
-                                                </div>
+                                             <div class="custom-select__input">
+                                                <input type="text" placeholder="Designer" />
                                              </div>
                                           </div>
                                           <div class="select">
                                              <div class="custom-select__title">
                                                 <p>Size</p>
                                              </div>
-                                             <div class="custom-select">
-                                                <div class="custom-select__trigger">
-                                                   <span>Please select</span>
-                                                   <div class="arrow"></div>
+                                             <div class="content__accardion">
+                                                <div class="container">
+                                                   <div class="custom-select-wrapper">
+                                                      <div class="custom-select book-info__size">
+                                                         <div class="custom-select__trigger"><span>Size</span>
+                                                            <div class="arrow"></div>
+                                                         </div>
+                                                         <div class="custom-options">
+                                                            <span class="custom-option selected" data-value="US7">US
+                                                               7</span>
+                                                            <span class="custom-option" data-value="US8">US 8</span>
+                                                            <span class="custom-option" data-value="US9">US 9</span>
+                                                            <span class="custom-option" data-value="US10">US 10</span>
+
+                                                         </div>
+                                                      </div>
+                                                   </div>
                                                 </div>
                                              </div>
                                           </div>
                                        </div>
-                                       <div class="photo_dow">
+                                       <div class="photo__dow">
                                           <div class="photo__title">
                                              <p>Download photo</p>
                                           </div>
-                                          <div class="photos">
-                                             <div class="photo">
+                                          <div class="photo__box">
+                                             <div class="photo__item">
                                                 <svg width="143" height="110" viewBox="0 0 143 110" fill="none"
                                                    xmlns="http://www.w3.org/2000/svg">
                                                    <rect x="0.5" y="0.5" width="142" height="109" fill="#FBFBFB"
@@ -1318,7 +1359,7 @@
                                                 </svg>
                                                 <p>Front</p>
                                              </div>
-                                             <div class="photo">
+                                             <div class="photo__item">
                                                 <svg width="143" height="110" viewBox="0 0 143 110" fill="none"
                                                    xmlns="http://www.w3.org/2000/svg">
                                                    <rect x="0.5" y="0.5" width="142" height="109" fill="#FBFBFB"
@@ -1338,7 +1379,7 @@
                                                 </svg>
                                                 <p>Right side</p>
                                              </div>
-                                             <div class="photo">
+                                             <div class="photo__item">
                                                 <svg width="143" height="110" viewBox="0 0 143 110" fill="none"
                                                    xmlns="http://www.w3.org/2000/svg">
                                                    <rect x="0.5" y="0.5" width="142" height="109" fill="#FBFBFB"
@@ -1358,7 +1399,7 @@
                                                 </svg>
                                                 <p>Left side</p>
                                              </div>
-                                             <div class="photo">
+                                             <div class="photo__item">
                                                 <svg width="143" height="110" viewBox="0 0 143 110" fill="none"
                                                    xmlns="http://www.w3.org/2000/svg">
                                                    <rect x="0.5" y="0.5" width="142" height="109" fill="#FBFBFB"
@@ -1378,7 +1419,7 @@
                                                 </svg>
                                                 <p>Bottom</p>
                                              </div>
-                                             <div class="photo">
+                                             <div class="photo__item">
                                                 <svg width="143" height="110" viewBox="0 0 143 110" fill="none"
                                                    xmlns="http://www.w3.org/2000/svg">
                                                    <rect x="0.5" y="0.5" width="142" height="109" fill="#FBFBFB"
@@ -1420,9 +1461,6 @@
                                              </div>
                                           </div>
                                        </div>
-                                       <!-- <div class="continue">
-                                                                           <button>Continue</button>
-                                                                        </div> -->
                                     </div>
                                  </div>
                                  <input type="button" name="next" class="next action-button " value="Continue" />
@@ -1431,12 +1469,40 @@
                               </fieldset>
                               <fieldset>
                                  <div class="form-card form-card3">
-                                    <label class="fieldlabels">Upload Your Photo:</label> <input type="file" name="pic"
-                                       accept="image/*">
-                                    <label class="fieldlabels">Upload Signature Photo:</label> <input type="file"
-                                       name="pic" accept="image/*">
+                                    <div class="form__wrraper">
+                                       <div class="select__data">
+                                          <div class="select__data-title">
+                                             <p>Select Item Return date</p>
+                                          </div>
+                                          <div class="select">
+                                             <div class="custom-select__title">
+                                                <p>Select rental period</p>
+                                             </div>
+                                             <div class="custom-select__input">
+                                                <input type="date" />
+                                             </div>
+                                             <div class="custom-select__info">
+                                                <p>rental duration cannot be less than 3 week*</p>
+                                             </div>
+                                          </div>
+                                          <div class="select__data-or">
+                                             <p>OR</p>
+                                          </div>
+                                          <div class="select__data-check">
+                                             <div class="data__remem">
+                                                <label class="container">
+                                                   Select return date later
+                                                   <input id="rememberMe" type="checkbox" value="lgRememberMe">
+                                                   <span class="checkmark"></span>
+                                                </label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
                                  </div>
                                  <input type="button" name="next" class="next action-button" value="Send" />
+                                 <br />
+                                 <br />
                                  <input type="button" name="previous" class="previous action-button-previous"
                                     value="Previous" />
                               </fieldset>
@@ -1626,6 +1692,56 @@
          if (orderDetal.style.display == "none")
             orderDetal.style.display = "block";
       }
+
+      // // Start Select js
+
+      for (const dropdown of document.querySelectorAll(".custom-select-wrapper")) {
+         dropdown.addEventListener("click", function () {
+            this.querySelector(".custom-select").classList.toggle("open");
+         });
+      }
+      for (const option of document.querySelectorAll(".custom-option")) {
+         option.addEventListener("click", function () {
+            if (!this.classList.contains("selected")) {
+               this.parentNode
+                  .querySelector(".custom-option.selected")
+                  .classList.remove("selected");
+               this.classList.add("selected");
+               this.closest(".custom-select").querySelector(
+                  ".custom-select__trigger span"
+               ).textContent = this.textContent;
+               this.closest(".custom-select").querySelector(
+                  ".custom-select__trigger span"
+               ).style = "color:#000;";
+            }
+         });
+      }
+
+      window.addEventListener("click", function (e) {
+         for (const select of document.querySelectorAll(".custom-select")) {
+            if (!select.contains(e.target)) {
+               select.classList.remove("open");
+            }
+         }
+      });
+
+      function selectOption(index) {
+         let optionOnIdx = document.querySelector(
+            ".custom-option:nth-child(" + index + ")"
+         );
+         let optionSelected = document.querySelector(".custom-option.selected");
+         if (optionOnIdx !== optionSelected) {
+            optionSelected.parentNode
+               .querySelector(".custom-option.selected")
+               .classList.remove("selected");
+            optionOnIdx.classList.add("selected");
+            optionOnIdx
+               .closest(".custom-select")
+               .querySelector(".custom-select__trigger span").textContent =
+               optionOnIdx.textContent;
+         }
+      }
+// // End Select js
    </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script>
