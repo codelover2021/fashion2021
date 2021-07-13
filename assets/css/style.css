@@ -3958,6 +3958,7 @@ body {
   -webkit-text-decoration-line: underline;
      -moz-text-decoration-line: underline;
           text-decoration-line: underline;
+  color: #000;
 }
 
 .footer {
