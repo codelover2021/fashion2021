@@ -3967,6 +3967,7 @@ body {
 
 .pagecontact__section .contact__textarea {
   width: 470px;
+  height: 150px;
 }
 
 .pagecontact__section .contact__textarea p {
@@ -3980,6 +3981,7 @@ body {
 
 .pagecontact__section .contact__textarea textarea {
   width: 100%;
+  height: 100%;
   font-size: 17px;
   resize: none;
   border: 1px solid #000000;
