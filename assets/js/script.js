@@ -1,4 +1,4 @@
-// "use-strict";
+//  // Start Image preview
 (function (document, window, index) {
   var inputs = document.querySelectorAll(".inputfile");
   Array.prototype.forEach.call(inputs, function (input) {
@@ -26,10 +26,14 @@
       input.classList.remove("has-focus");
     });
   });
+  
 })(document, window, 0);
+// // End Image preview
 
+// // Start Header basket product
 let basket = document.querySelector(".basket");
 let basketPrd = document.querySelector(".basketPrd");
+// if(basket !== null && basketPrd !== null) {
 basket.addEventListener("click", function (e) {
   basketPrd.classList.toggle("basketPrd__active");
 });
@@ -37,45 +41,51 @@ let clsBasket = document.querySelector(".close");
 clsBasket.addEventListener("click", function (e) {
   basketPrd.classList.remove("basketPrd__active");
 });
+// }
+// // End Header basket product
 
 // // Start filter div
 const filter = document.querySelector(".customSelect__trigger");
-filter.addEventListener("click", function (e) {
-  document.querySelector(".icon").classList.toggle("open");
-  if (filterForm.style.left === "150%") {
-    document.querySelector(".customSelect__trigger > span").innerHTML =
-      "Close Filters";
-    document.querySelector("#filterForm").style.left = "0";
-  } else if ((filterForm.style.left = "0px")) {
-    document.querySelector(".customSelect__trigger > span").innerHTML =
-      "Show Filters";
-    document.querySelector("#filterForm").style.left = "150%";
-    document.querySelector(".icon").className = "icon";
-  }
-});
+if (filter !== null) {
+  filter.addEventListener("click", function (e) {
+    document.querySelector(".icon").classList.toggle("open");
+    if (filterForm.style.left === "150%") {
+      document.querySelector(".customSelect__trigger > span").innerHTML =
+        "Close Filters";
+      document.querySelector("#filterForm").style.left = "0";
+    } else if ((filterForm.style.left = "0px")) {
+      document.querySelector(".customSelect__trigger > span").innerHTML =
+        "Show Filters";
+      document.querySelector("#filterForm").style.left = "150%";
+      document.querySelector(".icon").className = "icon";
+    }
+  });
+}
 // // End filter div
 
 // // Start accardion
 let acc = document.getElementsByClassName("accordion");
-let i;
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if (panel.className !== "panel__desing") {
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
+if (acc !== null) {
+  let i;
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      let panel = this.nextElementSibling;
+      if (panel.className !== "panel__desing") {
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
       } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = "400px";
+        }
       }
-    } else {
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = "400px";
-      }
-    }
-  });
+    });
+  }
 }
 // // End accardion
 
@@ -114,29 +124,34 @@ for (i = 0; i < acc.length; i++) {
     var maxVal = parseInt($(maxBtn).val());
     $(range_max).html(addSeparator(maxVal) + " $");
   }
-  $('input[type="range"]').on("input", rangeInputChangeEventHandler);
+
+  if ($('input[type="range"]').length > 0) {
+    $('input[type="range"]').on("input", rangeInputChangeEventHandler);
+  }
 })();
 // // End Price range
 
 // // Start Search text
 const input = document.querySelector(".search_icon");
-input.addEventListener("keyup", (e) => {
-  searchText = e.target.value;
-  console.log(e.target.value);
-  refresh();
-});
-let id;
-function refresh() {
-  if (id !== undefined) {
-    clearTimeout(id);
+if (input !== null) {
+  input.addEventListener("keyup", (e) => {
+    searchText = e.target.value;
+    console.log(e.target.value);
+    refresh();
+  });
+  let id;
+  function refresh() {
+    if (id !== undefined) {
+      clearTimeout(id);
+    }
+    id = setTimeout(() => {}, 500);
   }
-  id = setTimeout(() => {}, 500);
 }
 // // End Search text
 
 // // Start Tab
 function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
+  let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -150,7 +165,6 @@ function openCity(evt, cityName) {
 }
 // Get the element with id="defaultOpen" and click on it
 // document.getElementById("defaultOpen").click();
-
 // var els = document.getElementsByName("del");
 // els.forEach(function (item) {
 //   item.addEventListener("click", function () {
@@ -158,3 +172,161 @@ function openCity(evt, cityName) {
 //   });
 // });
 // // End Tab
+
+// // Start Modal Order Detali Account page
+const buttons = document.querySelectorAll(".trigger[data-modal-trigger]");
+if (buttons.length > 0) {
+  for (let button of buttons) {
+    modalEvent(button);
+  }
+  function modalEvent(button) {
+    button.addEventListener("click", () => {
+      const trigger = button.getAttribute("data-modal-trigger");
+      // console.log('trigger', trigger)
+      const modal = document.querySelector(`[data-modal=${trigger}]`);
+      // console.log("modal", modal);
+      const contentWrapper = modal.querySelector(".content-wrapper");
+      // console.log(contentWrapper);
+      const close = modal.querySelector(".close");
+      close.addEventListener("click", () => modal.classList.remove("open"));
+      modal.addEventListener("click", () => modal.classList.remove("open"));
+      contentWrapper.addEventListener("click", (e) => e.stopPropagation());
+      modal.classList.toggle("open");
+    });
+  }
+
+  function hide() {
+    const order = document.getElementById("profilepage__orders");
+    const orderDetal = document.getElementById("profilepage__ordersDetalis");
+    if (order.style.display == "block") order.style.display = "none";
+    if (orderDetal.style.display == "none") orderDetal.style.display = "block";
+  }
+}
+// // End Modal Order Detali Account page
+
+// // Start Select js
+for (const dropdown of document.querySelectorAll(".custom-select-wrapper")) {
+  dropdown.addEventListener("click", function () {
+    this.querySelector(".custom-select").classList.toggle("open");
+  });
+}
+for (const option of document.querySelectorAll(".custom-option")) {
+  option.addEventListener("click", function () {
+    if (!this.classList.contains("selected")) {
+      this.parentNode
+        .querySelector(".custom-option.selected")
+        .classList.remove("selected");
+      this.classList.add("selected");
+      this.closest(".custom-select").querySelector(
+        ".custom-select__trigger span"
+      ).textContent = this.textContent;
+      this.closest(".custom-select").querySelector(
+        ".custom-select__trigger span"
+      ).style = "color:#000;";
+    }
+  });
+}
+window.addEventListener("click", function (e) {
+  for (const select of document.querySelectorAll(".custom-select")) {
+    if (!select.contains(e.target)) {
+      select.classList.remove("open");
+    }
+  }
+});
+function selectOption(index) {
+  let optionOnIdx = document.querySelector(
+    ".custom-option:nth-child(" + index + ")"
+  );
+  let optionSelected = document.querySelector(".custom-option.selected");
+  if (optionOnIdx !== optionSelected) {
+    optionSelected.parentNode
+      .querySelector(".custom-option.selected")
+      .classList.remove("selected");
+    optionOnIdx.classList.add("selected");
+    optionOnIdx
+      .closest(".custom-select")
+      .querySelector(".custom-select__trigger span").textContent =
+      optionOnIdx.textContent;
+  }
+}
+// // End Select js
+
+$(document).ready(function () {
+  let current_fs, next_fs, previous_fs; //fieldsets
+  let opacity;
+  let current = 1;
+  let steps = $("fieldset").length;
+
+  setProgressBar(current);
+
+  $(".next").click(function () {
+    current_fs = $(this).parent();
+    next_fs = $(this).parent().next();
+
+    //Add Class Active
+    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+    //show the next fieldset
+    next_fs.show();
+    //hide the current fieldset with style
+    current_fs.animate(
+      { opacity: 0 },
+      {
+        step: function (now) {
+          // for making fielset appear animation
+          opacity = 1 - now;
+
+          current_fs.css({
+            display: "none",
+            position: "relative",
+          });
+          next_fs.css({ opacity: opacity });
+        },
+        duration: 500,
+      }
+    );
+    setProgressBar(++current);
+  });
+
+  $(".previous").click(function () {
+    current_fs = $(this).parent();
+    previous_fs = $(this).parent().prev();
+
+    //Remove class active
+    $("#progressbar li")
+      .eq($("fieldset").index(current_fs))
+      .removeClass("active");
+
+    //show the previous fieldset
+    previous_fs.show();
+
+    //hide the current fieldset with style
+    current_fs.animate(
+      { opacity: 0 },
+      {
+        step: function (now) {
+          // for making fielset appear animation
+          opacity = 1 - now;
+
+          current_fs.css({
+            display: "none",
+            position: "relative",
+          });
+          previous_fs.css({ opacity: opacity });
+        },
+        duration: 500,
+      }
+    );
+    setProgressBar(--current);
+  });
+
+  function setProgressBar(curStep) {
+    let percent = parseFloat(100 / steps) * curStep;
+    percent = percent.toFixed();
+    $(".progress-bar").css("width", percent + "%");
+  }
+
+  $(".submit").click(function () {
+    return false;
+  });
+});

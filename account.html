@@ -8,11 +8,7 @@
    <meta name="description" content="" />
    <meta name="keywords" content="" />
    <meta name="author" content="" />
-   <title></title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous" />
-   <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" />
+   <title>RENT ROCK RETURN</title>
    <link rel="stylesheet" href="./assets/css/style.min.css" />
 </head>
 
@@ -1186,14 +1182,6 @@
                      <div id="profilepage__consignment" class="tabcontent consignment" style="display: none">
                         <div class="consignment__section-wrapper">
                            <form id="msform" class="msform" action="#" method="#">
-                              <!-- <ul id="section-tabs">
-                                 <li class="current active">
-                                    <span>1.</span> Creds
-                                 </li>
-                                 <li><span>2.</span> Deets</li>
-                                 <li><span>3.</span> Settings</li>
-                                 <li><span>4.</span> Last Words</li>
-                              </ul> -->
                               <div class="progress_box">
                                  <div class="progress__title">
                                     <h3>
@@ -1214,7 +1202,6 @@
                                     <!-- <li id="confirm"><strong>Finish</strong></li> -->
                                  </ul>
                               </div>
-
                               <fieldset>
                                  <div class="form-card form-card1">
                                     <div class="form__wrraper">
@@ -1268,7 +1255,9 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <input type="button" name="next" class="next action-button " value="Continue" />
+                                 <div class="glb-button  next">
+                                    <input type="button" name="next" value="Continue" />
+                                 </div>
                                  <div class="consignment__enquries">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                        xmlns="http://www.w3.org/2000/svg">
@@ -1488,9 +1477,11 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <input type="button" name="next" class="next action-button " value="Continue" />
+                                 <div class="glb-button next">
+                                    <input type="button" name="next" value="Continue" />
+                                 </div>
                                  <!-- <input type="button" name="previous" class="previous action-button-previous"
-                                    value="Previous" /> -->
+                                                         value="Previous" /> -->
                               </fieldset>
                               <fieldset>
                                  <div class="form-card form-card3">
@@ -1525,11 +1516,13 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <input type="button" name="next" class="next action-button" value="Send" />
+                                 <div class="glb-button next">
+                                    <input type="submit" name="next" value="Send" />
+                                 </div>
                                  <!-- <br />
-                                 <br />
-                                 <input type="button" name="previous" class="previous action-button-previous"
-                                    value="Previous" /> -->
+                                                      <br />
+                                                      <input type="button" name="previous" class="previous action-button-previous"
+                                                         value="Previous" /> -->
                               </fieldset>
                               <fieldset>
                                  <div class="form-card">
@@ -1540,24 +1533,58 @@
                                        <div class="col-5">
                                           <h2 class="steps">Step 4 - 4</h2>
                                        </div>
-                                    </div> <br><br>
-                                    <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
-                                    <div class="row justify-content-center">
-                                       <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image">
-                                       </div>
-                                    </div> <br><br>
-                                    <div class="row justify-content-center">
-                                       <div class="col-7 text-center">
-                                          <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
-                                       </div>
                                     </div>
                                  </div>
                               </fieldset>
                            </form>
                         </div>
                      </div>
+                     <div class="modal comments" data-modal="trigger-1">
+                        <article class="content-wrapper">
+                           <button class="close"></button>
+                           <div class="content">
+                              <div class="popUp-rate">
+                                 <form action="#">
+                                    <div class="rating__text">
+                                       <textarea name="" id="" placeholder="Tell us about your experience"></textarea>
+                                    </div>
+                                    <div class="rating__uploadImg">
+                                       <script>(function (e, t, n) { var r = e.querySelectorAll("html")[0]; r.className = r.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2") })(document, window, 0);</script>
+                                       <div class="box">
+                                          <input type="file" name="file-3[]" id="file-3"
+                                             accept="image/png, image/jpeg, image/webp" class="inputfile inputfile-3"
+                                             data-multiple-caption="{count} files selected" multiple />
+                                          <label for="file-3">
+                                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M17.3743 8.2793C17.4709 8.2793 17.5493 8.20117 17.5493 8.10449V7.28906H18.3645C18.4612 7.28906 18.5396 7.21094 18.5396 7.11426C18.5396 7.01758 18.4612 6.93945 18.3645 6.93945H17.5493V6.12402C17.5493 6.02734 17.4709 5.94922 17.3743 5.94922C17.2776 5.94922 17.1992 6.02734 17.1992 6.12402V6.93945H16.384C16.2874 6.93945 16.209 7.01758 16.209 7.11426C16.209 7.21094 16.2874 7.28906 16.384 7.28906H17.1992V8.10449C17.1992 8.20117 17.2776 8.2793 17.3743 8.2793Z"
+                                                   fill="#303030" />
+                                                <path
+                                                   d="M11.4204 15.8135C12.4968 15.8135 13.3723 14.9375 13.3723 13.8613C13.3723 12.7852 12.4968 11.9092 11.4204 11.9092C10.344 11.9092 9.46826 12.7852 9.46826 13.8613C9.46826 14.9375 10.344 15.8135 11.4204 15.8135ZM11.4204 12.2827C12.291 12.2827 12.9993 12.9907 12.9993 13.8613C12.9993 14.7319 12.291 15.4399 11.4204 15.4399C10.5498 15.4399 9.84131 14.7319 9.84131 13.8613C9.84131 12.9907 10.5498 12.2827 11.4204 12.2827Z"
+                                                   fill="#303030" />
+                                                <path
+                                                   d="M13.5534 13.0059C13.6602 13.271 13.7224 13.5589 13.7224 13.8618C13.7224 15.1313 12.6897 16.1636 11.4204 16.1636C10.1509 16.1636 9.11817 15.1313 9.11817 13.8618C9.11817 13.5589 9.18036 13.271 9.28717 13.0059H5.81006H5.45996V17.5415C5.45996 17.8223 5.68872 18.0508 5.96997 18.0508H16.8652C17.1494 18.0508 17.3806 17.8198 17.3806 17.5356V13.0059H17.0305H13.5534Z"
+                                                   fill="#303030" />
+                                                <path
+                                                   d="M16.8706 9.66895H13.937L13.3123 8.56055C13.2249 8.4043 13.0593 8.30762 12.8806 8.30762H9.95996C9.78125 8.30762 9.61572 8.4043 9.52857 8.56006L8.90332 9.66894H5.9646C5.68628 9.66894 5.45996 9.89502 5.45996 10.1733V12.6562H5.81006H9.46805C9.8743 12.001 10.5942 11.5601 11.4204 11.5601C12.2464 11.5601 12.9663 12.001 13.3725 12.6562H17.0305H17.3806V10.1787C17.3806 9.89746 17.1519 9.66895 16.8706 9.66895Z"
+                                                   fill="#303030" />
+                                             </svg>
+                                             <span>Upload photo</span>
+                                          </label>
+                                       </div>
+                                    </div>
+                                    <div class="rating__send glb-button">
+                                       <input type="submit" value="Send">
+                                    </div>
+                                    <div class="rating__cancel">
+                                       <input type="reset" value="Cancel">
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </article>
+                     </div>
                   </div>
-
                </div>
             </div>
          </section>
@@ -1683,170 +1710,9 @@
   </div>
 </footer>
    </div>
-   <script src="./assets/js/script.js"></script>
-   <script>
-      const buttons = document.querySelectorAll(".trigger[data-modal-trigger]");
 
-      for (let button of buttons) {
-         modalEvent(button);
-      }
-
-      function modalEvent(button) {
-         button.addEventListener("click", () => {
-            const trigger = button.getAttribute("data-modal-trigger");
-            // console.log('trigger', trigger)
-            const modal = document.querySelector(`[data-modal=${trigger}]`);
-            // console.log('modal', modal)
-            const contentWrapper = modal.querySelector(".content-wrapper");
-            const close = modal.querySelector(".close");
-
-            close.addEventListener("click", () => modal.classList.remove("open"));
-            modal.addEventListener("click", () => modal.classList.remove("open"));
-            contentWrapper.addEventListener("click", (e) => e.stopPropagation());
-
-            modal.classList.toggle("open");
-         });
-      }
-
-      function hide() {
-         const order = document.getElementById("profilepage__orders");
-         const orderDetal = document.getElementById(
-            "profilepage__ordersDetalis"
-         );
-         if (order.style.display == "block") order.style.display = "none";
-         if (orderDetal.style.display == "none")
-            orderDetal.style.display = "block";
-      }
-
-      // // Start Select js
-
-      for (const dropdown of document.querySelectorAll(".custom-select-wrapper")) {
-         dropdown.addEventListener("click", function () {
-            this.querySelector(".custom-select").classList.toggle("open");
-         });
-      }
-      for (const option of document.querySelectorAll(".custom-option")) {
-         option.addEventListener("click", function () {
-            if (!this.classList.contains("selected")) {
-               this.parentNode
-                  .querySelector(".custom-option.selected")
-                  .classList.remove("selected");
-               this.classList.add("selected");
-               this.closest(".custom-select").querySelector(
-                  ".custom-select__trigger span"
-               ).textContent = this.textContent;
-               this.closest(".custom-select").querySelector(
-                  ".custom-select__trigger span"
-               ).style = "color:#000;";
-            }
-         });
-      }
-
-      window.addEventListener("click", function (e) {
-         for (const select of document.querySelectorAll(".custom-select")) {
-            if (!select.contains(e.target)) {
-               select.classList.remove("open");
-            }
-         }
-      });
-
-      function selectOption(index) {
-         let optionOnIdx = document.querySelector(
-            ".custom-option:nth-child(" + index + ")"
-         );
-         let optionSelected = document.querySelector(".custom-option.selected");
-         if (optionOnIdx !== optionSelected) {
-            optionSelected.parentNode
-               .querySelector(".custom-option.selected")
-               .classList.remove("selected");
-            optionOnIdx.classList.add("selected");
-            optionOnIdx
-               .closest(".custom-select")
-               .querySelector(".custom-select__trigger span").textContent =
-               optionOnIdx.textContent;
-         }
-      }
-// // End Select js
-   </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script>
-      $(document).ready(function () {
-
-         let current_fs, next_fs, previous_fs; //fieldsets
-         let opacity;
-         let current = 1;
-         let steps = $("fieldset").length;
-
-         setProgressBar(current);
-
-         $(".next").click(function () {
-
-            current_fs = $(this).parent();
-            next_fs = $(this).parent().next();
-
-            //Add Class Active
-            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-            //show the next fieldset
-            next_fs.show();
-            //hide the current fieldset with style
-            current_fs.animate({ opacity: 0 }, {
-               step: function (now) {
-                  // for making fielset appear animation
-                  opacity = 1 - now;
-
-                  current_fs.css({
-                     'display': 'none',
-                     'position': 'relative'
-                  });
-                  next_fs.css({ 'opacity': opacity });
-               },
-               duration: 500
-            });
-            setProgressBar(++current);
-         });
-
-         $(".previous").click(function () {
-
-            current_fs = $(this).parent();
-            previous_fs = $(this).parent().prev();
-
-            //Remove class active
-            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-            //show the previous fieldset
-            previous_fs.show();
-
-            //hide the current fieldset with style
-            current_fs.animate({ opacity: 0 }, {
-               step: function (now) {
-                  // for making fielset appear animation
-                  opacity = 1 - now;
-
-                  current_fs.css({
-                     'display': 'none',
-                     'position': 'relative'
-                  });
-                  previous_fs.css({ 'opacity': opacity });
-               },
-               duration: 500
-            });
-            setProgressBar(--current);
-         });
-
-         function setProgressBar(curStep) {
-            let percent = parseFloat(100 / steps) * curStep;
-            percent = percent.toFixed();
-            $(".progress-bar")
-               .css("width", percent + "%")
-         }
-
-         $(".submit").click(function () {
-            return false;
-         })
-
-      });
-   </script>
+   <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
