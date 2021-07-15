@@ -358,62 +358,110 @@
    </div>
 </header>
       <main class="page">
-         <section class="page__section faq__section">
-            <div class="faq__title">
-               <h1>FAQ'S</h1>
-            </div>
-            <div class="faq__acc">
-               <div class="row">
-                  <div class="col">
-                     <div class="tabs">
-                        <div class="tab">
-                           <input type="checkbox" id="chck1">
-                           <label class="tab-label" for="chck1">How can I track the status of my package?</label>
-                           <div class="tab-content">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam blanditiis adipisci
-                                 quia labore!
-                                 Fugiat sit sunt repellat porro odio cumque aut laboriosam architecto accusamus eum.</p>
-                           </div>
+         <section class="productsingle__section-1">
+            <div class="productsingle__wrraper">
+               <div id="content-wrapper" class="productsingle__container">
+                  <div class="column productsingle__column">
+                     <div class="primary productsingle__primary">
+                        <div id="slideLeft" class="slide-arrow primary__slideLeft" onclick="previousSlide()">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.5 16.25L6.25 10L12.5 3.75" stroke="black" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
                         </div>
-                        <div class="tab">
-                           <input type="checkbox" id="chck2">
-                           <label class="tab-label" for="chck2">How do I make a return?</label>
-                           <div class="tab-content">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eum incidunt aut
-                                 aliquid sit commodi
-                                 rem facilis repellendus facere, nam consectetur sapiente inventore corrupti deleniti.
-                              </p>
-                           </div>
+                        <div class="primary__image">
+                           <img id=featured src="assets/img/shoe1.jpg">
                         </div>
-                        <div class="tab">
-                           <input type="checkbox" id="chck3">
-                           <label class="tab-label" for="chck3">Can I exchange the item?</label>
-                           <div class="tab-content">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eum incidunt aut
-                                 aliquid sit commodi
-                                 rem
-                                 facilis repellendus facere, nam consectetur sapiente inventore corrupti deleniti.</p>
-                           </div>
+                        <div class="primary__image-zoom">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.5625 9.0625H11.5625" stroke="white" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                              <path d="M9.0625 6.5625V11.5625" stroke="white" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                              <path
+                                 d="M9.0625 15.6248C12.6869 15.6248 15.625 12.6866 15.625 9.06226C15.625 5.43789 12.6869 2.49976 9.0625 2.49976C5.43813 2.49976 2.5 5.43789 2.5 9.06226C2.5 12.6866 5.43813 15.6248 9.0625 15.6248Z"
+                                 stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M13.7026 13.7029L17.4996 17.4998" stroke="white" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
                         </div>
-                        <div class="tab">
-                           <input type="checkbox" id="chck4">
-                           <label class="tab-label" for="chck4">Do you ship outside the United States?</label>
-                           <div class="tab-content">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eum incidunt aut
-                                 aliquid sit commodi
-                                 rem
-                                 facilis repellendus facere, nam consectetur sapiente inventore corrupti deleniti.</p>
+                        <div id="slideRight" class="slide-arrow primary__slideRight" onclick="nextSlide()">
+                           <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.5 0.75L6.75 7L0.5 13.25" stroke="black" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                     </div>
+                     <div id="slide-wrapper" class="primary__slide-wrapper">
+                        <div id="slider" class="primary__slider">
+                           <img class="thumbnail active" src="assets/img/shoe1.jpg">
+                           <img class="thumbnail" src="assets/img/shoe2.jpg">
+                           <img class="thumbnail" src="assets/img/shoe3.jpg">
+                           <img class="thumbnail" src="assets/img/shoe2.jpg">
+                           <img class="thumbnail" src="assets/img/shoe3.jpg">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="column productsingle__column">
+                     <div class="productsingle__info">
+                        <div class="productsingle__name">
+                           <h2>Yeezy Boost 350 V2 YecheilYeezy</h2>
+                        </div>
+                        <div class="productsingle__wrraper">
+                           <div class="product__book-info">
+                              <div class="book-info__date">
+                                 <input type="date" placeholder="Delivery + Return dates">
+                              </div>
+                              <div class="content__accardion">
+                                 <div class="container">
+                                    <div class="custom-select-wrapper">
+                                       <div class="custom-select book-info__size">
+                                          <div class="custom-select__trigger"><span>Size</span>
+                                             <div class="arrow"></div>
+                                          </div>
+                                          <div class="custom-options">
+                                             <span class="custom-option selected" data-value="US7">US 7</span>
+                                             <span class="custom-option" data-value="US8">US 8</span>
+                                             <span class="custom-option" data-value="US9">US 9</span>
+                                             <span class="custom-option" data-value="US10">US 10</span>
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="custom-select-wrapper" style="/* top: 50px; *//* right: 0px; */">
+                                       <div class="custom-select book-info__duration">
+                                          <div class="custom-select__trigger"><span>Duration</span>
+                                             <div class="arrow"></div>
+                                          </div>
+                                          <div class="custom-options">
+                                             <span class="custom-option selected" data-value="3day">3 Day</span>
+                                             <span class="custom-option" data-value="5day">5 Day</span>
+                                             <span class="custom-option" data-value="7day">7 Day</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="productsingle__chart-size">
+                              <div class="chart-size__wrraper">
+                                 <p onclick="openCategory()">chart size</p>
+                              </div>
+                           </div>
+                           <div class="productsingle__price">
+                              <span>$25</span>
+                           </div>
+                           <div class="productsingle__book-button">
+                              <div class="book__button glb-button">
+                                 <input type="button" value="Reserve Now">
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
-            <div class="faq__mQuestion">
-               <a href="#">More questions?</a>
-            </div>
-            <div class="faq__contact">
-               <a href="#">Contact Us</a>
             </div>
          </section>
       </main>
@@ -538,9 +586,61 @@
   </div>
 </footer>
    </div>
-</body>
+
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="./assets/js/script.js"></script>
 
-<script src="./assets/js/script.js"></script>
+   <script type="text/javascript">
 
-</html>
+      // // Start Image Slider Product Single
+      let thumbnails = document.getElementsByClassName('thumbnail')
+      let activeImages = document.getElementsByClassName('active')
+      let slideRight = document.getElementById('slideRight')
+
+      // // Start Left and Right slide show
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      function nextSlide() {
+         showSlides(slideIndex += 1);
+         document.getElementById('slider').scrollLeft += 180
+      }
+
+      function previousSlide() {
+         showSlides(slideIndex -= 1);
+         document.getElementById('slider').scrollLeft -= 180
+      }
+
+      function currentSlide(n) {
+         showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+         let i;
+         if (n > thumbnails.length) {
+            slideIndex = 1
+         }
+         if (n < 1) {
+            slideIndex = thumbnails.length
+         }
+
+         for (let slide of thumbnails) {
+            slide.classList.remove("active");
+         }
+         thumbnails[slideIndex - 1].classList.add("active");
+         document.getElementById('featured').src = thumbnails[slideIndex - 1].src
+      }
+      // // End Left and Right slide show
+
+      // // Start Click slide Image
+      for (var i = 0; i < thumbnails.length; i++) {
+         thumbnails[i].addEventListener('click', function () {
+            if (activeImages.length > 0) {
+               console.log(thumbnails[i])
+               activeImages[0].classList.remove('active')
+            }
+            this.classList.add('active')
+            document.getElementById('featured').src = this.src
+         })
+      }
+      		// // End Click slide Image
+   </script>
+</body>

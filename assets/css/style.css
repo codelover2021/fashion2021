@@ -111,6 +111,10 @@ body {
   margin: 0px auto;
 }
 
+.page {
+  padding-top: 100px;
+}
+
 .glb-button {
   text-align: center;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -629,38 +633,6 @@ body {
   padding-bottom: 14px;
 }
 
-.header .menu__sub-list-design .all__design {
-  text-align: center;
-  cursor: default;
-}
-
-.header .menu__sub-list-design .all__design p {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.06em;
-  color: #000000;
-}
-
-.header .menu__sub-list-design .alph__design {
-  text-align: center;
-  margin-top: 16px;
-  cursor: default;
-}
-
-.header .menu__sub-list-design .alph__design span {
-  cursor: pointer;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 1.2em;
-  color: #000000;
-}
-
-.header .menu__sub-list-design .alph__design span:hover {
-  font-weight: 600;
-}
-
 .header .menu-right .menu__list-icon {
   margin: 0;
 }
@@ -956,6 +928,41 @@ body {
   color: #261f1a;
 }
 
+.all__design {
+  text-align: center;
+  cursor: default;
+}
+
+.all__design p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.alph__design {
+  text-align: center;
+  margin-top: 16px;
+  cursor: default;
+}
+
+.alph__design span {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.alph__design span:hover {
+  font-weight: 600;
+}
+
+.alph__design span:not(:last-child) {
+  letter-spacing: 1.7em;
+}
+
 .requestAnItemPage__section-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -992,7 +999,7 @@ body {
 
 .requestAnItemPage__section .section__right-requestForm {
   width: 388px;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-left: 16.5%;
 }
 
@@ -2026,6 +2033,7 @@ body {
 
 .profilepage__section-2 {
   width: 100%;
+  padding-bottom: 70px;
 }
 
 .profilepage__section-2 .section-2__wrapper {
@@ -2042,7 +2050,7 @@ body {
   position: relative;
   height: auto;
   text-align: left;
-  margin-top: 351px;
+  margin-top: 251px;
   padding-left: 5%;
   width: 285px;
 }
@@ -2078,8 +2086,7 @@ body {
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right {
-  margin-top: 199px;
-  margin-bottom: 70px;
+  margin-top: 100px;
   padding-left: 10%;
 }
 
@@ -3597,7 +3604,8 @@ body {
 }
 
 .faq__section {
-  padding: 200px 0;
+  margin-top: 100px;
+  padding-bottom: 200px;
 }
 
 .faq__title {
@@ -3743,9 +3751,9 @@ body {
   color: #000;
 }
 
-.page__section {
-  padding-top: 100px;
-  padding-bottom: 191px;
+.ambassador__section {
+  margin-top: 100px;
+  padding-bottom: 93px;
 }
 
 .ambassador__wrraper {
@@ -3836,7 +3844,7 @@ body {
 }
 
 .ambassador__about-remem {
-  margin: 0;
+  margin-top: 20px;
   font-size: 16px;
 }
 
@@ -3919,13 +3927,12 @@ body {
 }
 
 .pagecontact__section {
-  padding-top: 100px;
+  margin-top: 100px;
   padding-bottom: 324px;
 }
 
 .pagecontact__section .contact__title {
   width: 100%;
-  margin-top: 100px;
   text-align: center;
 }
 
@@ -4016,6 +4023,574 @@ body {
 
 .pagecontact__section .content__right > div:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.loginpage__section .section__left {
+  width: 42%;
+}
+
+.loginpage__section .section__left-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url(../img/log_sign.jpg) center center/cover no-repeat;
+  z-index: -1;
+}
+
+.loginpage__section .section__left-image::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: -o-linear-gradient(353.36deg, rgba(0, 0, 0, 0.568) 0%, rgba(0, 0, 0, 0) 99.48%);
+  background: linear-gradient(96.64deg, rgba(0, 0, 0, 0.568) 0%, rgba(0, 0, 0, 0) 99.48%);
+}
+
+.loginpage__section .section__right {
+  width: 58%;
+  padding-bottom: 288px;
+}
+
+.loginpage__section .section__right-loginForm {
+  width: 470px;
+  margin: 0 auto;
+  margin-top: 209px;
+}
+
+.loginpage__section .loginForm__title {
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+
+.loginpage__section .loginForm__email {
+  display: inline-block;
+}
+
+.loginpage__section .loginForm__email input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.loginpage__section .loginForm__pass {
+  display: inline-block;
+}
+
+.loginpage__section .loginForm__pass input {
+  margin-bottom: 10px;
+}
+
+.loginpage__section .loginForm__remem-forget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.33px;
+  color: #032d23;
+}
+
+.loginpage__section .loginForm__forget a {
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.33px;
+  color: #032d23;
+}
+
+.loginpage__section .loginForm input {
+  width: 470px;
+  border: 1px solid #000;
+  padding: 18px 0 18px 60px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.loginpage__section .loginForm input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.loginpage__section .loginForm input::-moz-placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.loginpage__section .loginForm input:-ms-input-placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.loginpage__section .loginForm input::-ms-input-placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.loginpage__section .loginForm input::placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.loginpage__section .loginForm__button {
+  margin-top: 20px;
+}
+
+.loginpage__section .loginForm__button input {
+  width: 100%;
+  border: none;
+  background: #000000;
+  border-radius: 6px;
+  padding: 15px 196px;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.loginpage__section .loginForm__ask-sign {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.loginpage__section .loginForm__ask-sign span {
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.33px;
+  color: #032d23;
+}
+
+.loginpage__section .loginForm__ask-sign a {
+  padding-left: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.33px;
+  color: #261f1a;
+}
+
+.loginpage__section .loginForm .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.loginpage__section .loginForm .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.loginpage__section .loginForm .checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 19.5px;
+  width: 19.5px;
+  background-color: #eee;
+}
+
+.loginpage__section .loginForm .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.loginpage__section .loginForm .container input:checked ~ .checkmark {
+  background-color: #000;
+}
+
+.loginpage__section .loginForm .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.loginpage__section .loginForm .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.loginpage__section .loginForm .container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.loginpage__section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.loginForm__remem-forget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.33px;
+  color: #032d23;
+}
+
+.loginForm .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.loginForm .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.loginForm .checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 19.5px;
+  width: 19.5px;
+  background-color: #eee;
+}
+
+.loginForm .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.loginForm .container input:checked ~ .checkmark {
+  background-color: #000;
+}
+
+.loginForm .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.loginForm .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.loginForm .container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.designer__section {
+  padding-bottom: 93px;
+}
+
+.designer__wrraper {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 31px;
+}
+
+.designer__title {
+  width: 100%;
+  text-align: center;
+}
+
+.designer__title h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.designer__info {
+  margin-top: 18px;
+}
+
+.designer .all__design p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.designer__brands {
+  margin-top: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.designer__brands .brands__colum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.designer__brands .brands__alph {
+  margin-top: 40px;
+}
+
+.designer__brands .brands__alph p {
+  font-size: 48px;
+  line-height: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.designer__brands .brands__alph ul {
+  margin-top: 10px;
+}
+
+.designer__brands .brands__alph ul li a {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.designer__brands .brands__alph ul li a:hover {
+  text-decoration: underline;
+}
+
+.productsingle__section-1 {
+  margin-top: 59px;
+}
+
+.productsingle__section-1 .productsingle__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+}
+
+.productsingle__section-1 .productsingle__column {
+  position: relative;
+  width: 33%;
+}
+
+.productsingle__section-1 .productsingle__column:nth-child(2) {
+  padding-left: 80px;
+}
+
+.productsingle__section-1 .productsingle__info {
+  width: 307px;
+}
+
+.productsingle__section-1 .productsingle__name h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.productsingle__section-1 .productsingle__price span {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #2a1d16;
+}
+
+.productsingle__section-1 .book__button {
+  text-align: left;
+  margin-top: 12px;
+}
+
+.productsingle__section-1 .book__button input {
+  width: 225px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 0;
+  padding: 10px 0;
+}
+
+.productsingle__section-1 .primary {
+  position: relative;
+}
+
+.productsingle__section-1 .primary__image {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.productsingle__section-1 .primary__image img {
+  position: relative;
+  max-width: 500px;
+  max-height: 280px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  z-index: 2;
+}
+
+.productsingle__section-1 .primary__image img:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+  z-index: 5;
+}
+
+.productsingle__section-1 .primary__slideLeft {
+  top: 45%;
+  left: 0px;
+}
+
+.productsingle__section-1 .primary__slideRight {
+  top: 45%;
+  right: 0px;
+}
+
+.productsingle__section-1 .primary__image-zoom {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  z-index: 3;
+  background: black;
+}
+
+.productsingle__section-1 .thumbnail {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 180px;
+  max-height: 100px;
+  cursor: pointer;
+  opacity: 0.5;
+  margin: 5px;
+}
+
+.productsingle__section-1 .thumbnail:hover {
+  opacity: 1;
+}
+
+.productsingle__section-1 .slide-arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.productsingle__section-1 .slide-arrow > svg {
+  cursor: pointer;
+}
+
+.productsingle__section-1 .slide-arrow:hover {
+  opacity: 0.5;
+}
+
+.productsingle__section-1 .image__zoom {
+  position: absolute;
+  background: black;
+  bottom: 22px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  z-index: 3;
+}
+
+.productsingle__section-1 .active {
+  opacity: 1;
+}
+
+.productsingle__section-1 .content__accardion {
+  width: 224px;
+}
+
+.productsingle__section-1 .content__accardion .custom-options span {
+  line-height: 45px;
+  font-size: 12px;
+}
+
+.productsingle__section-1 .content__accardion .custom-select-wrapper {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.productsingle__section-1 .content__accardion .custom-select__trigger {
+  background: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 10px 5px 10px 5px;
+}
+
+.productsingle__section-1 .content__accardion .custom-select__trigger span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #56240a;
+}
+
+.productsingle__section-1 .content__accardion .custom-select__trigger .arrow::after,
+.productsingle__section-1 .content__accardion .custom-select__trigger .arrow::before {
+  background-color: #56240a;
 }
 
 .footer {
