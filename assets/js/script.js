@@ -26,7 +26,6 @@
       input.classList.remove("has-focus");
     });
   });
-  
 })(document, window, 0);
 // // End Image preview
 
@@ -330,3 +329,56 @@ $(document).ready(function () {
     return false;
   });
 });
+
+// // Start Image Slider Product Single
+let thumbnails = document.getElementsByClassName("thumbnail");
+let activeImages = document.getElementsByClassName("active");
+let slideRight = document.getElementById("slideRight");
+
+if (thumbnails.length > 0) {
+  // // Start Left and Right slide show
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  function nextSlide() {
+    showSlides((slideIndex += 1));
+    document.getElementById("slider").scrollLeft += 180;
+  }
+
+  function previousSlide() {
+    showSlides((slideIndex -= 1));
+    document.getElementById("slider").scrollLeft -= 180;
+  }
+
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+  function showSlides(n) {
+    let i;
+    if (n > thumbnails.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = thumbnails.length;
+    }
+
+    for (let slide of thumbnails) {
+      slide.classList.remove("active");
+    }
+    thumbnails[slideIndex - 1].classList.add("active");
+    document.getElementById("featured").src = thumbnails[slideIndex - 1].src;
+  }
+  // // End Left and Right slide show
+
+  // // Start Click slide Image
+  for (var i = 0; i < thumbnails.length; i++) {
+    thumbnails[i].addEventListener("click", function () {
+      if (activeImages.length > 0) {
+        console.log(thumbnails[i]);
+        activeImages[0].classList.remove("active");
+      }
+      this.classList.add("active");
+      document.getElementById("featured").src = this.src;
+    });
+  }
+  // // End Click slide Image
+}
