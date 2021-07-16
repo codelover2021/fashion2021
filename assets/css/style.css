@@ -4316,6 +4316,10 @@ body {
   transform: rotate(45deg);
 }
 
+.invalid-feedback strong {
+  color: #db0d00;
+}
+
 .designer__section {
   padding-bottom: 93px;
 }
