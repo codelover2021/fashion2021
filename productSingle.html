@@ -442,7 +442,7 @@
                                  <span>85 mm ( in )</span>
                               </div>
                               <div class="book-info__chart-size">
-                                 <p onclick="openCategory()">size chart</p>
+                                 <p onclick="openSizeChart()">size chart</p>
                               </div>
                            </div>
                            <div class="productsingle__book-price">
@@ -452,6 +452,75 @@
                               <input type="button" value="Reserve Now">
                            </div>
                         </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="size-chart__wrraper">
+                  <div class="size-chart">
+                     <div class="size-chart__content">
+                        <div class="size-chart__title">
+                           <h2>Size chart</h2>
+                        </div>
+                        <div class="size-chart__option">
+                           <div class="size-chart__option-titles">
+                              <div class="size-chart__option-col">
+                                 <p>US</p>
+                              </div>
+                              <div class="size-chart__option-col">
+                                 <p>Italian</p>
+                              </div>
+                              <div class="content__accardion size-chart__option-col size-chart__select">
+                                 <div class="container">
+                                    <div class="custom-select-wrapper">
+                                       <div class="custom-select">
+                                          <div class="custom-select__trigger"><span>UK</span>
+                                             <div class="arrow"></div>
+                                          </div>
+                                          <div class="custom-options">
+                                             <span class="custom-option selected" data-value="UK">UK</span>
+                                             <span class="custom-option" data-value="France">France</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hr"></div>
+                           <div class="size-chart__option-item">
+                              <ul>
+                                 <li>4</li>
+                                 <li>4.5</li>
+                                 <li>5</li>
+                                 <li>5.5</li>
+                                 <li>6</li>
+                                 <li>6.5</li>
+                              </ul>
+                              <ul>
+                                 <li>35</li>
+                                 <li>35</li>
+                                 <li>36</li>
+                                 <li>36</li>
+                                 <li>37</li>
+                                 <li>37</li>
+                              </ul>
+                              <ul>
+                                 <li>2</li>
+                                 <li>2.5</li>
+                                 <li>3</li>
+                                 <li>3.5</li>
+                                 <li>4</li>
+                                 <li>4.5</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="close" onclick="closeSizeChart()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M18.75 5.25L5.25 18.75" stroke="black" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                           <path d="M18.75 18.75L5.25 5.25" stroke="black" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                        </svg>
                      </div>
                   </div>
                </div>
@@ -976,8 +1045,6 @@
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script src="./assets/js/script.js"></script>
-
-
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"
       integrity="sha512-jm5exnXjOC6mBpqBG81xU+GK4ybKq28mLihDCNj2E3RkzrfW/tSGt7Uy7wRSkedl95C4cH9+9lectBCGwEcD0g=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -1021,5 +1088,18 @@
    </script>
 
    <script type="text/javascript">
+      const sizeChart = document.querySelector(".size-chart__wrraper");
+      function openSizeChart() {
+         sizeChart.setAttribute(
+            "style",
+            "visibility:visible; pointer-events: all; opacity: 1"
+         );
+      }
+      function closeSizeChart() {
+         sizeChart.setAttribute(
+            "style",
+            "visibility:hidden; pointer-events: none; opacity: 0"
+         );
+      }
    </script>
 </body>
