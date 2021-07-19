@@ -382,3 +382,23 @@ if (thumbnails.length > 0) {
   }
   // // End Click slide Image
 }
+
+// // Start Size Chart popUp
+const sizeChart = document.querySelector(".size-chart__wrraper");
+function openSizeChart() {
+  if (sizeChart !== null) {
+    sizeChart.setAttribute(
+      "style",
+      "visibility:visible; pointer-events: all; opacity: 1"
+    );
+  }
+}
+function closeSizeChart() {
+  if (sizeChart !== null) {
+    sizeChart.setAttribute(
+      "style",
+      "visibility:hidden; pointer-events: none; opacity: 0"
+    );
+  }
+}
+// // End Size Chart popUp
