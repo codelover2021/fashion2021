@@ -12,6 +12,7 @@
    <link rel="stylesheet" href="./assets/css/style.min.css" />
 
 </head>
+
 <body>
    <div class="wrapper cBlack">
       <header class="header">
@@ -358,45 +359,37 @@
    </div>
 </header>
       <main class="page">
-         <section class="page__section loginpage__section">
-            <div class="loginpage__section-wrapper">
-               <div class="section__left">
-                  <div class="section__left-image"></div>
+         <section class="page__section loginpage2__section">
+            <div class="loginpage2__section-wrapper">
+               <div class="loginForm__title">
+                  <h2>Log In</h2>
                </div>
-               <div class="section__right">
-                  <div class="section__right-loginForm">
-                     <div class="loginForm__title">
-                        <h2>Log In</h2>
+               <form action="#" method="post" enctype="multipart/form-data" class="loginForm">
+                  <div class="loginForm__email">
+                     <input id="email" placeholder="Email" tabindex="1" name="useremali" type="email" />
+                  </div>
+                  <div class="loginForm__pass">
+                     <input id="password" placeholder="Password" tabindex="2" name="userpass" type="password" />
+                  </div>
+                  <div class="loginForm__remem-forget">
+                     <div class="loginForm__remem">
+                        <label class="container">
+                           Remember me
+                           <input id="rememberMe" type="checkbox" value="lgRememberMe">
+                           <span class="checkmark"></span>
+                        </label>
                      </div>
-                     <form action="#" method="post" enctype="multipart/form-data" class="loginForm">
-                        <div class="loginForm__email">
-                           <input id="email" placeholder="Email" tabindex="1" name="useremali" type="email" />
-                        </div>
-                        <div class="loginForm__pass">
-                           <input id="password" placeholder="Password" tabindex="2" name="userpass" type="password" />
-                        </div>
-                        <div class="loginForm__remem-forget">
-                           <div class="loginForm__remem">
-                              <label class="container">
-                                 Remember me
-                                 <input id="rememberMe" type="checkbox" value="lgRememberMe">
-                                 <span class="checkmark"></span>
-                              </label>
-                           </div>
-                           <div class="loginForm__forget">
-                              <a id="forget" href="#">Forgot your password?</a>
-                           </div>
-                        </div>
-                        <div class="loginForm__button">
-                           <input id="login" type="submit" value="LOG IN">
-                        </div>
-                     </form>
-                     <div class="loginForm__ask-sign">
-                        <span>Don’t have an account?</span>
-                        <a href="./signUpPage.html">Sign up</a>
+                     <div class="loginForm__forget">
+                        <a id="forget" href="#">Forgot your password?</a>
                      </div>
                   </div>
-
+                  <div class="loginForm__button">
+                     <input id="login" type="submit" value="LOG IN">
+                  </div>
+               </form>
+               <div class="loginForm__ask-sign">
+                  <span>Don’t have an account?</span>
+                  <a href="./signUpPage.html">Sign up</a>
                </div>
             </div>
          </section>

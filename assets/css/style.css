@@ -977,7 +977,7 @@ body {
 }
 
 .alph__design span:not(:last-child) {
-  letter-spacing: 1.7em;
+  margin-right: 24px;
 }
 
 .requestAnItemPage__section-wrapper {
@@ -4342,7 +4342,7 @@ body {
 }
 
 .designer__wrraper {
-  width: 960px;
+  width: 1000px;
   margin: 0 auto;
   margin-top: 31px;
 }
@@ -4365,9 +4365,13 @@ body {
   margin-top: 18px;
 }
 
-.designer .all__design p {
+.designer__info .all__design p {
   font-size: 18px;
   line-height: 22px;
+}
+
+.designer__info .alph__design span:not(:last-child) {
+  margin-right: 25px;
 }
 
 .designer__brands {
@@ -5165,6 +5169,129 @@ body {
   line-height: 175.5%;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+.loginpage2__section-wrapper .loginForm input {
+  width: 470px;
+  border: 1px solid #000;
+  padding: 18px 0 18px 60px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.loginpage2__section-wrapper .loginForm input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.loginpage2__section-wrapper .loginForm input::-moz-placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.loginpage2__section-wrapper .loginForm input:-ms-input-placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.loginpage2__section-wrapper .loginForm input::-ms-input-placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.loginpage2__section-wrapper .loginForm input::placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.loginpage2__section-wrapper .loginForm__title {
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+
+.loginpage2__section-wrapper .loginForm__email {
+  display: inline-block;
+  margin-top: 27px;
+}
+
+.loginpage2__section-wrapper .loginForm__email input {
+  margin: 0px;
+}
+
+.loginpage2__section-wrapper .loginForm__forget a {
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.33px;
+  color: #000;
+}
+
+.loginpage2__section-wrapper .loginForm__pass {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.loginpage2__section-wrapper .loginForm__pass input {
+  margin: 0px;
+}
+
+.loginpage2__section-wrapper .loginForm__remem-forget {
+  margin-top: 10px;
+}
+
+.loginpage2__section-wrapper .loginForm__button {
+  margin-top: 20px;
+}
+
+.loginpage2__section-wrapper .loginForm__button input {
+  width: 100%;
+  border: none;
+  background: #000000;
+  border-radius: 6px;
+  padding: 15px 196px;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.loginpage2__section-wrapper .loginForm__ask-sign {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.loginpage2__section-wrapper .loginForm__ask-sign span {
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.33px;
+  color: #000;
+}
+
+.loginpage2__section-wrapper .loginForm__ask-sign a {
+  padding-left: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.33px;
+  color: #261f1a;
+}
+
+.loginpage2__section-wrapper {
+  width: 470px;
+  margin: 0 auto;
+  margin-top: 142px;
+  text-align: center;
+  padding-bottom: 342px;
+}
+
+.invalid-feedback strong {
+  color: #db0d00;
 }
 
 .footer {
