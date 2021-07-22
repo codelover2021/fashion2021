@@ -138,6 +138,23 @@ body {
   background-color: #261f1aea;
 }
 
+.glb-button a {
+  display: block;
+  background: #261f1a;
+  padding: 16px 0px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.25em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.glb-button a:hover,
+.glb-button a:focus {
+  background-color: #261f1aea;
+}
+
 .glb-input p {
   font-size: 16px;
   line-height: 20px;
@@ -245,7 +262,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.06em;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
 .custom-select__input {
@@ -5059,6 +5076,95 @@ body {
 
 .size-chart__select .custom-option {
   font-size: 24px;
+}
+
+.page__section .carrers__section {
+  width: 100%;
+}
+
+.page__section .carrers__wrraper {
+  width: 800px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  margin: 0 auto;
+  text-align: center;
+  color: #000000;
+}
+
+.page__section .carrers__title {
+  margin-top: 100px;
+}
+
+.page__section .carrers__title h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.page__section .carrers__follow {
+  margin-top: 45px;
+}
+
+.page__section .carrers__follow p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 175.5%;
+  letter-spacing: 0.06em;
+}
+
+.page__section .carrers__follow .linked-icon {
+  margin-top: 15px;
+}
+
+.page__section .carrers__info {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 108px;
+}
+
+.page__section .carrers__info-text p {
+  font-size: 18px;
+  line-height: 175.5%;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.page__section .carrers__info-button {
+  width: 306px;
+  display: inline-block;
+  margin-top: 43px;
+}
+
+.page__section .carrers__info-button a {
+  font-weight: normal;
+  padding: 0;
+  padding: 9px 0;
+}
+
+.page__section .carrers__emai {
+  margin-top: 107px;
+}
+
+.page__section .carrers__emai-text p {
+  font-size: 18px;
+  line-height: 175.5%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.page__section .carrers__emai-log {
+  margin-top: 37px;
+}
+
+.page__section .carrers__emai-log p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 175.5%;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .footer {
