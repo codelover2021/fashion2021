@@ -112,7 +112,7 @@ body {
 }
 
 .page {
-  padding-top: 100px;
+  padding-top: 160px;
 }
 
 .glb-button {
@@ -446,6 +446,11 @@ body {
   background-color: #fff;
 }
 
+.header__logo {
+  padding-top: 40px;
+  text-align: center;
+}
+
 .header__logo span {
   font-weight: bold;
   font-size: 24px;
@@ -472,6 +477,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 100px;
+}
+
+.header .menu__body {
+  padding-top: 19px;
 }
 
 .header .menu__sub-list {
@@ -4519,31 +4528,25 @@ body {
 
 .productsingle__section-1 .productsingle__book-info .book-info__hell-height {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   border-bottom: 1px solid #e5e5e5;
 }
 
-.productsingle__section-1 .productsingle__book-info .book-info__hell-height span {
+.productsingle__section-1 .productsingle__book-info .book-info__hell-height p {
   letter-spacing: 0.06em;
   font-size: 14px;
   padding: 13px 0;
 }
 
-.productsingle__section-1 .productsingle__book-info .book-info__hell-height span:first-child {
+.productsingle__section-1 .productsingle__book-info .book-info__hell-height p:first-child {
   font-weight: normal;
-  line-height: 17px;
+  line-height: 10px;
   color: #6b4029;
 }
 
-.productsingle__section-1 .productsingle__book-info .book-info__hell-height span:last-child {
+.productsingle__section-1 .productsingle__book-info .book-info__hell-height p:last-child {
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 0px;
   color: #261f1a;
 }
 
