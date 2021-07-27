@@ -1,4 +1,18 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap);
+@font-face {
+  font-family: "Helvetica";
+  font-display: swap;
+  src: url("../fonts/HelveticaBold.woff") format("woff"), url("../fonts/HelveticaBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Helvetia";
+  font-display: swap;
+  src: url("../fonts/HelveticaRoman.woff") format("woff"), url("../fonts/HelveticaRoman.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
 /*reset css*/
 
@@ -98,7 +112,7 @@ body {
   background-color: #fff;
   font-size: 14px;
   line-height: 1.6;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-weight: 400;
   color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -125,7 +139,7 @@ body {
   border: none;
   background: #261f1a;
   padding: 16px 0px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.25em;
@@ -142,7 +156,7 @@ body {
   display: block;
   background: #261f1a;
   padding: 16px 0px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.25em;
@@ -326,7 +340,7 @@ body {
 }
 
 .content__accardion .custom-select__trigger span {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.06em;
@@ -356,7 +370,7 @@ body {
 }
 
 .content__accardion .custom-option {
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
   display: block;
   padding: 0 22px 0 22px;
@@ -452,7 +466,7 @@ body {
 }
 
 .header__logo span {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.06em;
@@ -533,7 +547,7 @@ body {
 }
 
 .header .menu__sub-list .list__img p:nth-child(2) {
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000;
   font-size: 18px;
@@ -562,7 +576,7 @@ body {
 }
 
 .header .menu__sub-list .list-desing__img p:nth-child(2) {
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000;
   font-size: 16px;
@@ -600,7 +614,7 @@ body {
 }
 
 .header .menu__sub-list-ul > li {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.06em;
@@ -612,7 +626,7 @@ body {
 }
 
 .header .menu__sub-list-ul > li ul li {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.06em;
@@ -696,7 +710,7 @@ body {
 }
 
 .header .menu__sub-list-design .menu__sub-list-ul > li {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.06em;
@@ -708,7 +722,7 @@ body {
 }
 
 .header .menu__sub-list-design .menu__sub-list-ul > li ul li {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.06em;
@@ -734,7 +748,7 @@ body {
 
 .header .menu-right .menu__list-icon a {
   line-height: 0px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.06em;
@@ -877,7 +891,7 @@ body {
 }
 
 .header .basketPrd__container1 .cart p {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0.06em;
@@ -907,7 +921,7 @@ body {
 }
 
 .header .basketPrd__container2 .basketPrd__item-header p {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.06em;
@@ -965,7 +979,7 @@ body {
 }
 
 .header .basketPrd__container2 .basketPrd__about-nmSz p {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.06em;
@@ -977,7 +991,7 @@ body {
 }
 
 .header .basketPrd__container2 .basketPrd__about-price span {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.06em;
@@ -990,7 +1004,7 @@ body {
 }
 
 .header .basketPrd__container3 .cart__total p {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.06em;
@@ -1006,7 +1020,7 @@ body {
 
 .header .basketPrd__container3 .cart__reserv button {
   background: none;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
@@ -1029,7 +1043,7 @@ body {
 }
 
 .all__design p {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.06em;
@@ -1044,14 +1058,14 @@ body {
 
 .alph__design span {
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
 }
 
 .alph__design span:hover {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .alph__design span:not(:last-child) {
@@ -1094,7 +1108,7 @@ body {
 }
 
 .requestAnItemPage__section .requestForm__title h1 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.01em;
@@ -1214,7 +1228,7 @@ body {
 }
 
 .productpage__section .section__right .product__head h2 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 54px;
   letter-spacing: 0.06em;
@@ -1275,7 +1289,7 @@ body {
 }
 
 .productpage__section .section__right .product__price {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.06em;
@@ -1354,7 +1368,7 @@ body {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .productpage__section .section__right .close:hover,
@@ -1375,7 +1389,7 @@ body {
 }
 
 .productpage__section .section__right .content__name p {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.06em;
@@ -1388,7 +1402,7 @@ body {
 }
 
 .productpage__section .section__right .content__price span {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 54px;
   letter-spacing: 0.06em;
@@ -1501,7 +1515,7 @@ body {
   display: block;
   padding: 0 10px;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   color: #000;
   line-height: 40px;
   cursor: pointer;
@@ -1716,7 +1730,7 @@ body {
   display: block;
   padding: 0 10px;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   color: #000;
   cursor: pointer;
   -webkit-transition: all 0.5s;
@@ -1940,7 +1954,7 @@ body {
 }
 
 .productpage__section .section__sort .filter__title h3 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.2em;
@@ -2154,11 +2168,11 @@ body {
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__left p:hover {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__left .active p {
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: underline;
 }
 
@@ -2199,7 +2213,7 @@ body {
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .orderpage__section-wrapper .order__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 54px;
   letter-spacing: 0.06em;
@@ -2289,7 +2303,7 @@ body {
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .orderpage__section-wrapper .order__box-detalis .box-detalis-date-title h3 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.06em;
@@ -2429,7 +2443,7 @@ body {
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .accountpage__section-wrapper .account__title p:first-child {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0.06em;
@@ -2485,7 +2499,7 @@ body {
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .accountpage__section-wrapper .account__detal a {
   display: inline-block;
   position: relative;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
@@ -2528,7 +2542,7 @@ body {
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .ordersDetalis__section-wrapper h3 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.2em;
@@ -2546,7 +2560,7 @@ body {
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .ordersDetalis__section-wrapper .ordersDetalis__title h2 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0.06em;
@@ -2600,7 +2614,7 @@ body {
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .ordersDetalis__section-wrapper .ordersDetalis__info2 .info2__section2 p {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.2em;
@@ -2745,7 +2759,7 @@ body {
 }
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .consignment__section-wrapper .consignment__title p {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 54px;
   letter-spacing: 0.06em;
@@ -2780,7 +2794,7 @@ body {
 
 .profilepage__section-2 .section-2__wrapper .tab__right .tabcontent > .consignment__section-wrapper .consignment__step .step p {
   position: absolute;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 175.5%;
   letter-spacing: 0.06em;
@@ -2998,7 +3012,7 @@ body {
 .consignment .msform .next-previous {
   width: 100px;
   background: #616161;
-  font-weight: bold;
+  font-weight: 700;
   color: white;
   border: 0 none;
   border-radius: 0px;
@@ -3155,7 +3169,7 @@ body {
 }
 
 .consignment__enquries p {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   -webkit-box-align: center;
@@ -3169,7 +3183,7 @@ body {
 }
 
 .consignment__contact a {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   -webkit-box-align: center;
@@ -3190,7 +3204,7 @@ body {
 
 .consignment .photo__title p {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.06em;
@@ -3212,7 +3226,7 @@ body {
 
 .consignment .photo__item p {
   padding-top: 6px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.06em;
@@ -3269,7 +3283,7 @@ body {
 }
 
 .consignment .content__accardion .custom-select__trigger span {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.06em;
@@ -3299,7 +3313,7 @@ body {
 }
 
 .consignment .content__accardion .custom-option {
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
   display: block;
   padding: 0 22px 0 22px;
@@ -3389,7 +3403,7 @@ body {
 }
 
 .consignment .select__data-title p {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.06em;
@@ -3698,7 +3712,7 @@ body {
 }
 
 .faq__title h1 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0.06em;
@@ -3752,7 +3766,7 @@ body {
   padding-right: 0;
   border-bottom: 1px solid #c4c4c4;
   cursor: pointer;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.06em;
@@ -3814,7 +3828,7 @@ body {
 }
 
 .faq__mQuestion a {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.06em;
@@ -3827,7 +3841,7 @@ body {
 }
 
 .faq__contact a {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.06em;
@@ -3853,7 +3867,7 @@ body {
 }
 
 .ambassador__title h1 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0.06em;
@@ -3868,7 +3882,7 @@ body {
 }
 
 .ambassador__text h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.06em;
@@ -3895,7 +3909,7 @@ body {
 }
 
 .ambassador__about-title h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.06em;
@@ -3944,7 +3958,7 @@ body {
 }
 
 .ambassador__platform-title h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.06em;
@@ -3970,7 +3984,7 @@ body {
 }
 
 .ambassador__platform-info p {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.05em;
@@ -4022,7 +4036,7 @@ body {
 }
 
 .pagecontact__section .contact__title h1 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0.06em;
@@ -4031,7 +4045,7 @@ body {
 }
 
 .pagecontact__section .contact__title p {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.06em;
@@ -4063,7 +4077,7 @@ body {
 }
 
 .pagecontact__section .contact__textarea p {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #4d4d4d;
@@ -4145,7 +4159,7 @@ body {
 }
 
 .loginpage__section .loginForm__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -4256,7 +4270,7 @@ body {
 
 .loginpage__section .loginForm__ask-sign a {
   padding-left: 30px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   line-height: 34px;
   letter-spacing: -0.33px;
@@ -4421,7 +4435,7 @@ body {
 }
 
 .designer__title h1 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0.06em;
@@ -4534,7 +4548,7 @@ body {
 }
 
 .productsingle__section-1 .productsingle__name h2 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.06em;
@@ -4597,13 +4611,13 @@ body {
 }
 
 .productsingle__section-1 .productsingle__book-info .book-info__hell-height p:first-child {
-  font-weight: normal;
+  font-weight: 400;
   line-height: 10px;
   color: #6b4029;
 }
 
 .productsingle__section-1 .productsingle__book-info .book-info__hell-height p:last-child {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 0px;
   color: #261f1a;
@@ -4630,7 +4644,7 @@ body {
 }
 
 .productsingle__section-1 .productsingle__book-price span {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0.06em;
@@ -4645,7 +4659,7 @@ body {
 
 .productsingle__section-1 .productsingle__book-button input {
   width: 225px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   padding: 0;
@@ -4826,7 +4840,7 @@ body {
 }
 
 .slide__title h3 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   line-height: 167%;
   letter-spacing: 0.06em;
@@ -4924,7 +4938,7 @@ body {
 }
 
 .slide__items .item__product-price span {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.06em;
@@ -5017,7 +5031,7 @@ body {
 }
 
 .size-chart__title h2 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0.06em;
@@ -5137,7 +5151,7 @@ body {
 
 .size-chart__select .custom-option.selected {
   color: #000;
-  background-color: #ECECEC;
+  background-color: #ececec;
 }
 
 .size-chart__select .custom-option {
@@ -5162,7 +5176,7 @@ body {
 }
 
 .page__section .carrers__title h1 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0.06em;
@@ -5174,7 +5188,7 @@ body {
 }
 
 .page__section .carrers__follow p {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
   line-height: 175.5%;
   letter-spacing: 0.06em;
@@ -5204,7 +5218,7 @@ body {
 }
 
 .page__section .carrers__info-button a {
-  font-weight: normal;
+  font-weight: 400;
   padding: 0;
   padding: 9px 0;
 }
@@ -5268,7 +5282,7 @@ body {
 }
 
 .loginpage2__section-wrapper .loginForm__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -5337,7 +5351,7 @@ body {
 
 .loginpage2__section-wrapper .loginForm__ask-sign a {
   padding-left: 30px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   line-height: 34px;
   letter-spacing: -0.33px;
@@ -5383,7 +5397,7 @@ body {
 }
 
 .footer__menu > h3 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.06em;
@@ -5443,7 +5457,7 @@ body {
 .footer__bottom-li ul li:not(:first-child)::before {
   content: "\2022";
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
@@ -5514,7 +5528,7 @@ body {
 }
 
 .rating__title p {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
   line-height: 21px;
   letter-spacing: 0.06em;
@@ -5617,7 +5631,7 @@ body {
   color: #fff;
   background: none;
   padding: 18px 0px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.25em;
@@ -5632,7 +5646,7 @@ body {
 }
 
 .rating__cancel input {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.25em;
