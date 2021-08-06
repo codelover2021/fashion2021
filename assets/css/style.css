@@ -675,6 +675,8 @@ body {
 }
 
 .cBlack .header .menu__link {
+  font-weight: 700;
+  text-transform: uppercase;
   color: #000;
 }
 
@@ -1114,6 +1116,11 @@ body {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #2a1d16;
+}
+
+.requestAnItemPage__section .requestForm__input p {
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .requestAnItemPage__section .requestForm__input input {
