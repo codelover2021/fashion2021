@@ -4422,10 +4422,6 @@ body {
   transform: rotate(45deg);
 }
 
-.invalid-feedback strong {
-  color: #db0d00;
-}
-
 .designer__section {
   padding-bottom: 93px;
 }
@@ -5373,10 +5369,6 @@ body {
   padding-bottom: 342px;
 }
 
-.invalid-feedback strong {
-  color: #db0d00;
-}
-
 .footer {
   background: #2e2e2e;
 }
@@ -5488,6 +5480,14 @@ body {
 .footer__bottom-text p {
   color: #888888;
   font-size: 12px;
+}
+
+.invalid-feedback strong {
+  color: #db0d00;
+}
+
+.text-danger {
+  color: #db0d00;
 }
 
 /*
