@@ -402,3 +402,30 @@ function closeSizeChart() {
   }
 }
 // // End Size Chart popUp
+
+
+function next(elem) {
+  do {
+    elem = elem.nextSibling;
+  } while (elem && elem.nodeType !== 1);
+  return elem;
+}
+function prev(elem) {
+  do {
+    elem = elem.previousSibling;
+  } while (elem && elem.nodeType !== 1);
+  return elem;
+}
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    var nextElem = next(input);
+    reader.onload = function (e) {
+      nextElem.src = e.target.result;
+      nextElem.style.display = "block";
+      var prevElem = prev(input);
+      prevElem.style.display = "none";
+    };
+  }
+  reader.readAsDataURL(input.files[0]);
+}
