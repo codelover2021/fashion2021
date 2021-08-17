@@ -403,6 +403,18 @@ function closeSizeChart() {
 }
 // // End Size Chart popUp
 
+// // Start login-popUp
+let logBtn = document.querySelector(".loginpage2__button");
+let logWrrap = document.querySelector(".loginpage2__wrraper");
+if (logBtn !== null && logWrrap !== null) {
+  logBtn.addEventListener("click", function (e) {
+    logWrrap.classList.toggle("open");
+  });
+  logWrrap.addEventListener("click", function (e) {
+    logWrrap.classList.remove("open");
+  });
+}
+// // End login-popUp
 
 function next(elem) {
   do {
