@@ -225,13 +225,7 @@ for (const option of document.querySelectorAll(".custom-option")) {
     }
   });
 }
-window.addEventListener("click", function (e) {
-  for (const select of document.querySelectorAll(".custom-select")) {
-    if (!select.contains(e.target)) {
-      select.classList.remove("open");
-    }
-  }
-});
+
 function selectOption(index) {
   let optionOnIdx = document.querySelector(
     ".custom-option:nth-child(" + index + ")"
@@ -410,11 +404,35 @@ if (logBtn !== null && logWrrap !== null) {
   logBtn.addEventListener("click", function (e) {
     logWrrap.classList.toggle("open");
   });
-  logWrrap.addEventListener("click", function (e) {
-    logWrrap.classList.remove("open");
-  });
 }
 // // End login-popUp
+
+// // Start payment-popUp
+let payBtn = document.querySelector(".popUpPayment__button");
+let payWrrap = document.querySelector(".popUpPayment__wrraper");
+if (payWrrap !== null && payWrrap !== null) {
+  payBtn.addEventListener("click", function (e) {
+    payWrrap.classList.toggle("open");
+  });
+}
+// // End payment-popUp
+
+// // Close Modals
+window.addEventListener("click", function (e) {
+  for (const select of document.querySelectorAll(".custom-select")) {
+    if (!select.contains(e.target)) {
+      select.classList.remove("open");
+    }
+  }
+  console.log("0");
+  if (e.target == logWrrap) {
+    logWrrap.classList.remove("open");
+  }
+  if (e.target == payWrrap) {
+    payWrrap.classList.remove("open");
+  }
+});
+// //
 
 function next(elem) {
   do {

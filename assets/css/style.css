@@ -5419,10 +5419,381 @@ body {
 }
 
 .loginpage2__section-wrapper {
-  width: 470px;
+  width: 54%;
   margin: 0 auto;
   text-align: center;
   padding: 101px 0;
+}
+
+.popUpPayment__button {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.popUpPayment__button input {
+  padding: 16px 97px;
+}
+
+.popUpPayment__wrraper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 0;
+  background-color: transparent;
+  overflow: hidden;
+  -webkit-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+  z-index: 9999;
+}
+
+.popUpPayment__wrraper.open {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.popUpPayment__section {
+  width: 45%;
+  background-color: #fff;
+}
+
+.popUpPayment__section-wrapper .loginForm input {
+  width: 470px;
+  border: 1px solid #000;
+  padding: 18px 0 18px 60px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.popUpPayment__section-wrapper .loginForm input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.popUpPayment__section-wrapper .loginForm input::-moz-placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.popUpPayment__section-wrapper .loginForm input:-ms-input-placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.popUpPayment__section-wrapper .loginForm input::-ms-input-placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.popUpPayment__section-wrapper .loginForm input::placeholder {
+  font-size: 18px;
+  color: #888;
+}
+
+.popUpPayment__section-wrapper .loginForm__title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+
+.popUpPayment__section-wrapper .loginForm__email {
+  display: inline-block;
+  margin-top: 27px;
+}
+
+.popUpPayment__section-wrapper .loginForm__email input {
+  margin: 0px;
+}
+
+.popUpPayment__section-wrapper .loginForm__forget a {
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.33px;
+  color: #000;
+}
+
+.popUpPayment__section-wrapper .loginForm__pass {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.popUpPayment__section-wrapper .loginForm__pass input {
+  margin: 0px;
+}
+
+.popUpPayment__section-wrapper .loginForm__remem-forget {
+  margin-top: 10px;
+}
+
+.popUpPayment__section-wrapper .loginForm__button {
+  margin-top: 20px;
+}
+
+.popUpPayment__section-wrapper .loginForm__button input {
+  width: 100%;
+  border: none;
+  background: #000000;
+  border-radius: 6px;
+  padding: 15px 196px;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.popUpPayment__section-wrapper .loginForm__ask-sign {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.popUpPayment__section-wrapper .loginForm__ask-sign span {
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.33px;
+  color: #000;
+}
+
+.popUpPayment__section-wrapper .loginForm__ask-sign a {
+  padding-left: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.33px;
+  color: #261f1a;
+}
+
+.popUpPayment__section-wrapper {
+  width: 82%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 73px;
+  padding-bottom: 69px;
+}
+
+.popUpPayment__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+
+.popUpPayment__form {
+  margin-top: 41px;
+}
+
+.popUpPayment__form input {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 21px;
+  color: #261f1a;
+}
+
+.popUpPayment__form input::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #888888;
+}
+
+.popUpPayment__form input::-moz-placeholder {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #888888;
+}
+
+.popUpPayment__form input:-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #888888;
+}
+
+.popUpPayment__form input::-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #888888;
+}
+
+.popUpPayment__form input::placeholder {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #888888;
+}
+
+.popUpPayment__email {
+  border: 1px solid #c4c4c4;
+}
+
+.popUpPayment__cardNumber-mmyy {
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popUpPayment__cardNumber {
+  display: block;
+  width: 48%;
+  border: 1px solid #c4c4c4;
+  position: relative;
+}
+
+.popUpPayment__cardNumber input {
+  display: block;
+  text-align: left;
+  width: 85%;
+  margin-right: 100%;
+}
+
+.popUpPayment__cardNumber span {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
+.popUpPayment__mmyy {
+  width: 48%;
+  border: 1px solid #c4c4c4;
+}
+
+.popUpPayment__cvv-txt {
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.popUpPayment__cvv {
+  border: 1px solid #c4c4c4;
+  position: relative;
+}
+
+.popUpPayment__txt {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.065em;
+  color: #261f1a;
+  margin-left: 21px;
+}
+
+.popUpPayment__save-button {
+  width: 43%;
+  margin: 0 auto;
+  margin-top: 64px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.popUpPayment__save-button input {
+  padding-left: 0;
+  color: #ffffff;
+}
+
+.popUpPayment__check1 {
+  margin-top: 20px;
+}
+
+.popUpPayment__check2 {
+  margin-top: 15px;
+}
+
+.popUpPayment__check .data__remem {
+  color: #000;
+  text-align: left;
+}
+
+.popUpPayment__check .data__remem .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popUpPayment__check .data__remem .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.popUpPayment__check .data__remem .checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 19.5px;
+  width: 19.5px;
+  background-color: #eee;
+}
+
+.popUpPayment__check .data__remem .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.popUpPayment__check .data__remem .container input:checked ~ .checkmark {
+  background-color: #000;
+}
+
+.popUpPayment__check .data__remem .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.popUpPayment__check .data__remem .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.popUpPayment__check .data__remem .container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .footer {
