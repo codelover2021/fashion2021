@@ -416,7 +416,15 @@ if (payWrrap !== null && payWrrap !== null) {
   });
 }
 // // End payment-popUp
-
+// // Start payment-popUp
+let addressBtn = document.querySelector(".popUpAddress__button");
+let addressWrrap = document.querySelector(".popUpAddress__wrraper");
+if (addressWrrap !== null && addressWrrap !== null) {
+  addressBtn.addEventListener("click", function (e) {
+    addressWrrap.classList.toggle("open");
+  });
+}
+// // End payment-popUp
 // // Close Modals
 window.addEventListener("click", function (e) {
   for (const select of document.querySelectorAll(".custom-select")) {
@@ -430,6 +438,9 @@ window.addEventListener("click", function (e) {
   }
   if (e.target == payWrrap) {
     payWrrap.classList.remove("open");
+  }
+  if (e.target == addressWrrap) {
+    addressWrrap.classList.remove("open");
   }
 });
 // //
