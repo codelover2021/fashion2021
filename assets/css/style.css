@@ -475,12 +475,12 @@ body {
   background-color: #fff;
 }
 
-.header__logo {
+.home .header__logo {
   padding-top: 40px;
   text-align: center;
 }
 
-.header__logo span {
+.home .header__logo span {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -488,7 +488,16 @@ body {
   color: #ffffff;
 }
 
+.cBlack .header__logo {
+  padding-top: 40px;
+  text-align: center;
+}
+
 .cBlack .header__logo span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.06em;
   color: #000000;
 }
 
@@ -499,13 +508,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 0px 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 100px;
+}
+
+.header .header__menu.menu {
+  padding-left: 8%;
 }
 
 .header .menu__body {
@@ -529,7 +542,7 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  top: 85%;
+  top: 100%;
   left: 0;
   background-color: #fff;
   padding: 36px 20px 65px 0px;
@@ -689,22 +702,27 @@ body {
   pointer-events: all;
 }
 
-.header .menu__body ul.menu__list li a.menu__link {
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.header .menu__body ul.menu__sub-list-ul li a.menu__link {
-  text-transform: uppercase;
-  color: #000;
-}
-
 .cBlack .header .menu__link {
+  text-transform: uppercase;
   color: #000;
 }
 
 .cBlack .header .menu__link svg path {
   stroke: #000;
+}
+
+.home .header .menu__link {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.home .header .menu__link svg path {
+  stroke: #fff;
+}
+
+.header .menu ul.menu__sub-list-ul li a.menu__link {
+  text-transform: uppercase;
+  color: #000;
 }
 
 .header .menu__arrow {
@@ -787,7 +805,7 @@ body {
 .header .menu-right .menu__sub-list {
   display: inline-block;
   position: absolute;
-  top: 80%;
+  top: 50%;
   right: 20px;
   left: initial;
   background-color: #e5e5e5;
@@ -1176,6 +1194,10 @@ body {
 
 .homepage__section-1 .section-1__box .box__video {
   padding-top: 50px;
+}
+
+.cBlack .homepage__section-1 .section-1__box {
+  padding-top: 240px;
 }
 
 .homepage__section-2 .section-2__wrapper {
