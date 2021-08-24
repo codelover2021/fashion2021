@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "Helvetica";
+  font-family: "HelveticaNeue";
   font-display: swap;
-  src: url("../fonts/HelveticaBold.woff") format("woff"), url("../fonts/HelveticaBold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: bold;
+  src: url("../fonts/HelveticaNeueLTPro-Roman.woff") format("woff"), url("../fonts/HelveticaNeueLTPro-Roman.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Helvetia";
+  font-family: "HelveticaNeue";
   font-display: swap;
-  src: url("../fonts/HelveticaRoman.woff") format("woff"), url("../fonts/HelveticaRoman.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  src: url("../fonts/HelveticaNeueLTPro-Bd.woff") format("woff"), url("../fonts/HelveticaNeueLTPro-Bd.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
 }
 
 /*reset css*/
@@ -117,7 +117,7 @@ body {
   background-color: #fff;
   font-size: 14px;
   line-height: 1.6;
-  font-family: "Helvetica", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 400;
   color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -482,7 +482,7 @@ body {
 
 .home .header__logo span {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 29px;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -495,7 +495,7 @@ body {
 
 .cBlack .header__logo span {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 29px;
   letter-spacing: 0.06em;
   color: #000000;
@@ -705,6 +705,7 @@ body {
 .cBlack .header .menu__link {
   text-transform: uppercase;
   color: #000;
+  font-weight: bold;
 }
 
 .cBlack .header .menu__link svg path {
@@ -1477,6 +1478,7 @@ body {
 .requestAnItemPage__section .requestForm__button input {
   width: 225px;
   margin-bottom: 0px;
+  text-transform: uppercase;
 }
 
 .productpage__section-wrapper {
@@ -4933,12 +4935,12 @@ body {
 .productsingle__section-1 .productsingle__book-info .book-info__accardion .custom-select__trigger span {
   font-size: 14px;
   line-height: 17px;
-  color: #56240a;
+  color: #000;
 }
 
 .productsingle__section-1 .productsingle__book-info .book-info__accardion .custom-select__trigger .arrow::after,
 .productsingle__section-1 .productsingle__book-info .book-info__accardion .custom-select__trigger .arrow::before {
-  background-color: #56240a;
+  background-color: #000;
 }
 
 .productsingle__section-1 .productsingle__book-info .book-info__hell-height {
@@ -4955,19 +4957,19 @@ body {
 .productsingle__section-1 .productsingle__book-info .book-info__hell-height p:first-child {
   font-weight: 400;
   line-height: 10px;
-  color: #6b4029;
+  color: #000;
 }
 
 .productsingle__section-1 .productsingle__book-info .book-info__hell-height p:last-child {
   font-weight: 400;
   font-size: 14px;
   line-height: 0px;
-  color: #261f1a;
+  color: #000;
 }
 
 .productsingle__section-1 .productsingle__book-info .book-info__chart-size {
   width: 64px;
-  border: 1px solid #707070;
+  border: 1px solid #000;
   margin: 19px 0 0 auto;
 }
 
@@ -4980,7 +4982,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #707070;
+  color: #000;
   padding: 5px 7px;
   cursor: pointer;
 }
@@ -5000,9 +5002,10 @@ body {
 }
 
 .productsingle__section-1 .productsingle__book-button input {
-  width: 225px;
+  width: 85%;
   font-weight: 400;
   font-size: 18px;
+  text-transform: uppercase;
   line-height: 22px;
   padding: 0;
   padding: 10px 0;
